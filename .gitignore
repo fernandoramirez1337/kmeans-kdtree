@@ -1,4 +1,7 @@
-*/build/
+build/
+.vscode/
+*.exe
+*.o
 *.aux
 *.log
 *.fdb_latexmk
