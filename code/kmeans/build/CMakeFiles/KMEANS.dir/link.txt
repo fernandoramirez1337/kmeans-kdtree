@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/KMEANS.dir/src/kmeans.cpp.o CMakeFiles/KMEANS.dir/main.cpp.o -o KMEANS 

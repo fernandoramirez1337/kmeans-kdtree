@@ -1,3 +1,0 @@
-/home/traintagger/Documents/2024-01/Estructuras de Datos Avanzadas CCOMP6-1/11/LAB04/code/kmeans/build/CMakeFiles/KMEANS.dir
-/home/traintagger/Documents/2024-01/Estructuras de Datos Avanzadas CCOMP6-1/11/LAB04/code/kmeans/build/CMakeFiles/edit_cache.dir
-/home/traintagger/Documents/2024-01/Estructuras de Datos Avanzadas CCOMP6-1/11/LAB04/code/kmeans/build/CMakeFiles/rebuild_cache.dir
