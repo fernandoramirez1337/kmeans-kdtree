@@ -149,7 +149,12 @@ KMeans::KMeans(std::string dataset_file_name) {
     while(true)
     {
         bool done = true;
-
+        std::vector<point> centers;
+        for (int i = 0; i < k; i++) {
+            centers.emplace_back(point(clusters[i].get_center(0), clusters[i].get_center(1)));
+        }
+        stuart_little.clear(stuart_little.root);
+        stuart_little.build(centers);
         // associates each point to the nearest center
         for(int i = 0; i < n_points; i++)
         {

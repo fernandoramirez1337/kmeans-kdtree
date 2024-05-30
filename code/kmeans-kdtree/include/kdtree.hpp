@@ -1,5 +1,6 @@
 #include <vector>
 
+class KMeans;
 
 struct point {
     double x, y;
@@ -22,8 +23,14 @@ private:
     double distanceSquared(point a, point b);
 public:
     KDTree();
+    ~KDTree();
+
     void build(std::vector<point>& points);
     void print();
     point nearest(point target);
+    void clear(Node* node);
+
+    friend class KMeans;
+
 };
 

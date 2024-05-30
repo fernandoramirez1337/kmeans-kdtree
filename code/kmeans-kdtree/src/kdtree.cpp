@@ -10,6 +10,18 @@ Node::Node(point coord) : coord(coord), left(nullptr), right(nullptr) {}
 
 KDTree::KDTree() : root(nullptr) {}
 
+KDTree::~KDTree() {
+    clear(root);
+}
+
+void KDTree::clear(Node* node) {
+    if (node != nullptr) {
+        clear(node->left);
+        clear(node->right);
+        delete node;
+    }
+}
+
 Node* KDTree::buildTree(std::vector<point>& points, int depth) {
     if (points.empty()) return nullptr;
 
@@ -87,7 +99,7 @@ point KDTree::nearest(point target) {
 void readData(std::vector<point>& data,std::string filename){
     std::ifstream file(filename);
     std::string line;
-    //Skip first line
+    // Skip first line
     getline(file, line);
     while(getline(file, line)){
         std::stringstream ss(line);
