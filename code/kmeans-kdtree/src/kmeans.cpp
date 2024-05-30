@@ -95,7 +95,9 @@ int KMeans::get_nearest_center(Point kmpoint)
 
 }
 
-KMeans::KMeans(std::string dataset_file_name) {
+KMeans::KMeans(std::string dataset_file_name, int k, int n) {
+    this->k = k;
+    this->n = n;
     std::ifstream file(dataset_file_name);
     if (!file.is_open()) {
         std::cerr << "Failed to open the file: " << dataset_file_name << std::endl;

@@ -48,11 +48,11 @@ public:
 class KMeans {
 private:
 	std::vector<Cluster> clusters;
-	int k = 5, n = 1000;
+	int k, n;
 
 	int get_nearest_center(Point);
 	KDTree stuart_little;
 
 public:
-    KMeans(std::string dataset_file_name);
+    KMeans(std::string dataset_file_name, int k, int n);
 };
